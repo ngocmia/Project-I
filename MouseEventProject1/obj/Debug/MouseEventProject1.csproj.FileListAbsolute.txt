@@ -1,7 +1,0 @@
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\bin\Debug\MouseEventDemo.exe.config
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\bin\Debug\MouseEventDemo.exe
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\bin\Debug\MouseEventDemo.pdb
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\obj\Debug\MouseEventDemo.csprojAssemblyReference.cache
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\obj\Debug\MouseEventDemo.csproj.CoreCompileInputs.cache
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\obj\Debug\MouseEventDemo.exe
-C:\Users\Ngoc Mai\Downloads\MouseEventDemo\MouseEventDemo\obj\Debug\MouseEventDemo.pdb

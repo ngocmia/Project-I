@@ -1,5 +1,0 @@
-bin\Debug\MouseEventDemo.exe
-bin\Debug\MouseEventDemo.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\MouseEventDemo.exe
-obj\Debug\MouseEventDemo.pdb
