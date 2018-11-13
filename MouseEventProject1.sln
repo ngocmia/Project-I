@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEventDemo", "MouseEventDemo.csproj", "{3A3BD170-6AD8-4763-98EB-7D967183EF8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEventProject1", "MouseEventProject1.csproj", "{3A3BD170-6AD8-4763-98EB-7D967183EF8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clifton.Tools.Events", "Clifton.Tools.Events\Clifton.Tools.Events.csproj", "{A0769BB5-9A45-4220-9A8F-D66823C8E4A8}"
 EndProject

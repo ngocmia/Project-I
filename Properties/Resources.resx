@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mouse_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mouse_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chuotgiua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chuotgiua1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chuotgiua_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chuotgiua_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chuotgiua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chuotgiua.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,11 @@
   <data name="chuot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chuot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chuotgiua_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chuotgiua_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mouse_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chuottrai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chuottrai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chuot_phai" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chuot_phai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +154,7 @@
   <data name="mouse_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mouse_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chuotgiua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chuotgiua1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chuotphai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chuotphai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -143,6 +143,26 @@ namespace MouseEventDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chuotphai {
+            get {
+                object obj = ResourceManager.GetObject("chuotphai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chuottrai {
+            get {
+                object obj = ResourceManager.GetObject("chuottrai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mouse_down {
             get {
                 object obj = ResourceManager.GetObject("mouse_down", resourceCulture);
