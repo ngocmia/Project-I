@@ -6,11 +6,7 @@ using System.IO;
 using System.Text;
 using log4net;
 using System.Drawing;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 
 namespace MouseEventDemo
@@ -98,6 +94,7 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).BeginInit();
+          
             this.SuspendLayout();
             // 
             // timer1
@@ -109,79 +106,79 @@ namespace MouseEventDemo
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = global::MouseEventDemo.Properties.Resources.chuot;
-            this.pictureBox1.Location = new System.Drawing.Point(194, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(196, 57);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 327);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // pictureBoxChuotPhai
             // 
             this.pictureBoxChuotPhai.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxChuotPhai.BackgroundImage = global::MouseEventDemo.Properties.Resources.chuot;
             this.pictureBoxChuotPhai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxChuotPhai.Enabled = false;
             this.pictureBoxChuotPhai.Image = global::MouseEventDemo.Properties.Resources.chuot_phai;
-            this.pictureBoxChuotPhai.Location = new System.Drawing.Point(194, 66);
+            this.pictureBoxChuotPhai.Location = new System.Drawing.Point(196, 57);
             this.pictureBoxChuotPhai.Name = "pictureBoxChuotPhai";
             this.pictureBoxChuotPhai.Size = new System.Drawing.Size(281, 327);
             this.pictureBoxChuotPhai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxChuotPhai.TabIndex = 15;
             this.pictureBoxChuotPhai.TabStop = false;
+            this.pictureBoxChuotPhai.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxChuotPhai_MouseMove);
             // 
             // pictureBoxChuottrai
             // 
             this.pictureBoxChuottrai.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxChuottrai.BackgroundImage = global::MouseEventDemo.Properties.Resources.chuot;
             this.pictureBoxChuottrai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxChuottrai.Enabled = false;
             this.pictureBoxChuottrai.Image = global::MouseEventDemo.Properties.Resources.chuot_trai_Recovered1;
-            this.pictureBoxChuottrai.Location = new System.Drawing.Point(194, 66);
+            this.pictureBoxChuottrai.Location = new System.Drawing.Point(196, 57);
             this.pictureBoxChuottrai.Name = "pictureBoxChuottrai";
             this.pictureBoxChuottrai.Size = new System.Drawing.Size(281, 327);
             this.pictureBoxChuottrai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxChuottrai.TabIndex = 14;
             this.pictureBoxChuottrai.TabStop = false;
+            this.pictureBoxChuottrai.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxChuottrai_MouseMove);
             // 
             // pictureBoxChuotGiua
             // 
-            this.pictureBoxChuotGiua.Enabled = false;
             this.pictureBoxChuotGiua.Image = global::MouseEventDemo.Properties.Resources.chuotgiua1;
-            this.pictureBoxChuotGiua.Location = new System.Drawing.Point(194, 66);
+            this.pictureBoxChuotGiua.Location = new System.Drawing.Point(196, 57);
             this.pictureBoxChuotGiua.Name = "pictureBoxChuotGiua";
             this.pictureBoxChuotGiua.Size = new System.Drawing.Size(281, 327);
             this.pictureBoxChuotGiua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxChuotGiua.TabIndex = 16;
             this.pictureBoxChuotGiua.TabStop = false;
+            this.pictureBoxChuotGiua.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxChuotGiua_MouseMove);
             // 
             // pictureBoxForward
             // 
             this.pictureBoxForward.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxForward.Enabled = false;
             this.pictureBoxForward.Image = global::MouseEventDemo.Properties.Resources.chuotgiua_up;
-            this.pictureBoxForward.Location = new System.Drawing.Point(194, 66);
+            this.pictureBoxForward.Location = new System.Drawing.Point(196, 57);
             this.pictureBoxForward.Name = "pictureBoxForward";
             this.pictureBoxForward.Size = new System.Drawing.Size(281, 327);
             this.pictureBoxForward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxForward.TabIndex = 13;
             this.pictureBoxForward.TabStop = false;
+            this.pictureBoxForward.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxForward_MouseMove);
             this.pictureBoxForward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnWheelBackward_MouseUp);
             // 
             // pictureBoxBackward
             // 
             this.pictureBoxBackward.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxBackward.Enabled = false;
             this.pictureBoxBackward.Image = global::MouseEventDemo.Properties.Resources.chuotgiua_down;
-            this.pictureBoxBackward.Location = new System.Drawing.Point(194, 66);
+            this.pictureBoxBackward.Location = new System.Drawing.Point(196, 57);
             this.pictureBoxBackward.Name = "pictureBoxBackward";
             this.pictureBoxBackward.Size = new System.Drawing.Size(281, 327);
             this.pictureBoxBackward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxBackward.TabIndex = 12;
             this.pictureBoxBackward.TabStop = false;
+            this.pictureBoxBackward.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxBackward_MouseMove);
             this.pictureBoxBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnWheelForward_MouseUp);
             // 
             // label1
@@ -217,7 +214,6 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxBackward);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -241,28 +237,8 @@ namespace MouseEventDemo
 			Form1 form=new Form1();
 			Application.Run(form);
 		}
-        private void OnRightMouseDown(object sender, MouseEventArgs e)
-        {
-            pictureBoxChuotPhai.Visible = true;
-            pictureBoxChuottrai.Visible = false;
-            pictureBox1.Visible = false;
-            pictureBoxBackward.Visible = false;
-            pictureBoxForward.Visible = false;
-            pictureBoxChuotGiua.Visible = false;
-            Log.Info("Nhay chuot phai");
-        }
-
-        private void OnRightMouseUp(object sender, MouseEventArgs e)
-        {
-            pictureBox1.Visible = true;
-            pictureBoxChuotPhai.Visible = true;
-            pictureBoxChuottrai.Visible = true;
-            pictureBoxForward.Visible = true;
-            pictureBoxBackward.Visible = true;
-            pictureBoxChuotGiua.Visible = true;
-        }
-
-        private void OnLeftMouseDown(object sender, MouseEventArgs e)
+       
+		private void OnLeftMouseDown(object sender, MouseEventArgs e)
 		{
 		
             pictureBoxChuottrai.Visible = true;
@@ -304,7 +280,40 @@ namespace MouseEventDemo
             pictureBoxBackward.Visible = true;
 			pictureBoxChuotGiua.Visible=true;
         }
-                     
+
+        private void OnRightMouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBoxChuotPhai.Visible = true;
+            pictureBoxChuottrai.Visible = false;
+            pictureBox1.Visible = false;
+            pictureBoxBackward.Visible = false;
+            pictureBoxForward.Visible = false;
+            pictureBoxChuotGiua.Visible = false;
+            Log.Info("Nhay chuot phai");
+        }
+
+		private void OnRightMouseUp(object sender, MouseEventArgs e)
+		{
+            pictureBox1.Visible = true;
+            pictureBoxChuotPhai.Visible = true;
+            pictureBoxChuottrai.Visible = true;
+            pictureBoxForward.Visible = true;
+            pictureBoxBackward.Visible = true;
+            pictureBoxChuotGiua.Visible = true;
+        }
+
+		private void OnWheelBackward(object sender, MouseEventArgs e)
+		{
+			pictureBoxForward.Visible=true;
+			pictureBoxBackward.Visible=false;
+            pictureBoxChuottrai.Visible = false ;
+            pictureBox1.Visible = false;
+            pictureBoxChuotPhai.Visible = false;
+            pictureBoxChuotGiua.Visible = false;
+            timer1.Start();
+            Log.Info("Chuot cuon xuong");
+        }
+        
         private void OnWheelForward(object sender, MouseEventArgs e)
 		{
 			pictureBoxForward.Visible=false;
@@ -316,19 +325,8 @@ namespace MouseEventDemo
             timer1.Start();
             Log.Info("Chuot cuon len");
         }
-        private void OnWheelBackward(object sender, MouseEventArgs e)
-        {
-            pictureBoxForward.Visible = true;
-            pictureBoxBackward.Visible = false;
-            pictureBoxChuottrai.Visible = false;
-            pictureBox1.Visible = false;
-            pictureBoxChuotPhai.Visible = false;
-            pictureBoxChuotGiua.Visible = false;
-            timer1.Start();
-            Log.Info("Chuot cuon xuong");
-        }
 
-        private void timer1_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+		private void timer1_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
 		{
             pictureBox1.Visible = true; 
             pictureBoxChuottrai.Visible=false;
@@ -366,12 +364,68 @@ namespace MouseEventDemo
             label2.Location = new Point(e.X, e.Y - label2.Height);
             Log.Info("Toa do chuot di chuyen: " + (e.X) + - + (e.Y));
         }
-        
+        private void pictureBox1_MouseMove( object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotGiua.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+            Log.Info("Toa do chuot di chuyen: " + (e.X ) + - +(e.Y ));
+        }
+        private void pictureBoxChuotGiua_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotGiua.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+        }
+
+        private void pictureBoxChuotPhai_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotPhai.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+        }
+
+        private void pictureBoxForward_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotPhai.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+        }
+
+        private void pictureBoxBackward_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotPhai.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+        }
+
+        private void pictureBoxChuottrai_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width + pictureBoxChuotPhai.Location.X, e.Y + pictureBoxChuotPhai.Location.Y);
+            label2.Location = new Point(e.X + pictureBoxChuotPhai.Location.X, e.Y - label2.Height + pictureBoxChuotPhai.Location.Y);
+        }
+        private void label1_MouseMove(object sender,MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width, e.Y);
+            label2.Location = new Point(e.X, e.Y - label2.Height);
+        }
+        private void label2_MouseMove( object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
+            label1.Location = new Point(e.X - label1.Width, e.Y);
+            label2.Location = new Point(e.X, e.Y - label2.Height);
+        }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
