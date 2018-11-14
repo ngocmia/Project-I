@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Web;
 using Clifton.Tools.Events;
@@ -25,15 +25,16 @@ namespace MouseEventDemo
         private PictureBox pictureBoxBackward;
         private Label label2;
         private Label label1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem aboutUsToolStripMenuItem;
+        private ToolStripMenuItem maiThịNgọcToolStripMenuItem;
+        private ToolStripMenuItem tuổiToolStripMenuItem;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem dHBachKhoaHaNoiToolStripMenuItem;
+        private ToolStripMenuItem dHBachKhoaHaNoiToolStripMenuItem1;
+        private System.ComponentModel.IContainer components;
 
-
-
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.Container components = null;
-
-		public Form1()
+        public Form1()
 		{
 			//A
 			// Required for Windows Form Designer support
@@ -78,6 +79,7 @@ namespace MouseEventDemo
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Timers.Timer();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -87,6 +89,13 @@ namespace MouseEventDemo
             this.pictureBoxChuotGiua = new System.Windows.Forms.PictureBox();
             this.pictureBoxForward = new System.Windows.Forms.PictureBox();
             this.pictureBoxBackward = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maiThịNgọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tuổiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dHBachKhoaHaNoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dHBachKhoaHaNoiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuottrai)).BeginInit();
@@ -94,6 +103,7 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -102,6 +112,24 @@ namespace MouseEventDemo
             this.timer1.Interval = 750D;
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 14);
+            this.label1.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 14);
+            this.label2.TabIndex = 18;
             // 
             // pictureBox1
             // 
@@ -175,23 +203,55 @@ namespace MouseEventDemo
             this.pictureBoxBackward.TabStop = false;
             this.pictureBoxBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnWheelForward_MouseUp);
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 14);
-            this.label1.TabIndex = 17;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutUsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(740, 24);
+            this.menuStrip1.TabIndex = 19;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // label2
+            // aboutUsToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 14);
-            this.label2.TabIndex = 18;
+            this.aboutUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maiThịNgọcToolStripMenuItem,
+            this.tuổiToolStripMenuItem,
+            this.dHBachKhoaHaNoiToolStripMenuItem,
+            this.dHBachKhoaHaNoiToolStripMenuItem1});
+            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.aboutUsToolStripMenuItem.Text = "AboutUs";
+            // 
+            // maiThịNgọcToolStripMenuItem
+            // 
+            this.maiThịNgọcToolStripMenuItem.Name = "maiThịNgọcToolStripMenuItem";
+            this.maiThịNgọcToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.maiThịNgọcToolStripMenuItem.Text = "Mai Thi Ngoc";
+            // 
+            // tuổiToolStripMenuItem
+            // 
+            this.tuổiToolStripMenuItem.Name = "tuổiToolStripMenuItem";
+            this.tuổiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.tuổiToolStripMenuItem.Text = "21 tuoi";
+            // 
+            // dHBachKhoaHaNoiToolStripMenuItem
+            // 
+            this.dHBachKhoaHaNoiToolStripMenuItem.Name = "dHBachKhoaHaNoiToolStripMenuItem";
+            this.dHBachKhoaHaNoiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.dHBachKhoaHaNoiToolStripMenuItem.Text = "CNTT1.02-K61";
+            // 
+            // dHBachKhoaHaNoiToolStripMenuItem1
+            // 
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Name = "dHBachKhoaHaNoiToolStripMenuItem1";
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Text = "DH Bach Khoa Ha Noi";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -206,6 +266,8 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxChuotGiua);
             this.Controls.Add(this.pictureBoxForward);
             this.Controls.Add(this.pictureBoxBackward);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
@@ -216,6 +278,8 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
