@@ -51,3 +51,4 @@ C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csproj
 C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csproj.CopyComplete
 C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.exe
 C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.pdb
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.Resources.project1.resources
