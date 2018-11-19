@@ -25,6 +25,12 @@ namespace MouseEventDemo
         private PictureBox pictureBoxBackward;
         private Label label2;
         private Label label1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem aboutUsToolStripMenuItem;
+        private ToolStripMenuItem maiThiNgocToolStripMenuItem;
+        private ToolStripMenuItem tuoiToolStripMenuItem;
+        private ToolStripMenuItem cNTT102K61ToolStripMenuItem;
+        private ToolStripMenuItem dHBachToolStripMenuItem;
 
 
 
@@ -89,12 +95,10 @@ namespace MouseEventDemo
             this.pictureBoxBackward = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.maiThịNgọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tuổiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dHBachKhoaHaNoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dHBachKhoaHaNoiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-
+            this.maiThiNgocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tuoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cNTT102K61ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dHBachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuottrai)).BeginInit();
@@ -102,6 +106,7 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -213,43 +218,37 @@ namespace MouseEventDemo
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.maiThịNgọcToolStripMenuItem,
-            this.tuổiToolStripMenuItem,
-            this.dHBachKhoaHaNoiToolStripMenuItem,
-            this.dHBachKhoaHaNoiToolStripMenuItem1});
+            this.maiThiNgocToolStripMenuItem,
+            this.tuoiToolStripMenuItem,
+            this.cNTT102K61ToolStripMenuItem,
+            this.dHBachToolStripMenuItem});
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.aboutUsToolStripMenuItem.Text = "AboutUs";
             // 
-            // maiThịNgọcToolStripMenuItem
+            // maiThiNgocToolStripMenuItem
             // 
-            this.maiThịNgọcToolStripMenuItem.Name = "maiThịNgọcToolStripMenuItem";
-            this.maiThịNgọcToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.maiThịNgọcToolStripMenuItem.Text = "Mai Thi Ngoc";
+            this.maiThiNgocToolStripMenuItem.Name = "maiThiNgocToolStripMenuItem";
+            this.maiThiNgocToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maiThiNgocToolStripMenuItem.Text = "Mai Thi Ngoc";
             // 
-            // tuổiToolStripMenuItem
+            // tuoiToolStripMenuItem
             // 
-            this.tuổiToolStripMenuItem.Name = "tuổiToolStripMenuItem";
-            this.tuổiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.tuổiToolStripMenuItem.Text = "21 tuoi";
+            this.tuoiToolStripMenuItem.Name = "tuoiToolStripMenuItem";
+            this.tuoiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tuoiToolStripMenuItem.Text = "21 tuoi";
             // 
-            // dHBachKhoaHaNoiToolStripMenuItem
+            // cNTT102K61ToolStripMenuItem
             // 
-            this.dHBachKhoaHaNoiToolStripMenuItem.Name = "dHBachKhoaHaNoiToolStripMenuItem";
-            this.dHBachKhoaHaNoiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.dHBachKhoaHaNoiToolStripMenuItem.Text = "CNTT1.02-K61";
+            this.cNTT102K61ToolStripMenuItem.Name = "cNTT102K61ToolStripMenuItem";
+            this.cNTT102K61ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cNTT102K61ToolStripMenuItem.Text = "CNTT1.02-K61";
             // 
-            // dHBachKhoaHaNoiToolStripMenuItem1
+            // dHBachToolStripMenuItem
             // 
-            this.dHBachKhoaHaNoiToolStripMenuItem1.Name = "dHBachKhoaHaNoiToolStripMenuItem1";
-            this.dHBachKhoaHaNoiToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
-            this.dHBachKhoaHaNoiToolStripMenuItem1.Text = "DH Bach Khoa Ha Noi";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-
+            this.dHBachToolStripMenuItem.Name = "dHBachToolStripMenuItem";
+            this.dHBachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dHBachToolStripMenuItem.Text = "DH Bach ";
             // 
             // Form1
             // 
@@ -266,8 +265,6 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxBackward);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -279,16 +276,23 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
 		}
-		#endregion
 
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		[STAThread]
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Text = Resources.project1.TenPhanMem + " " + Resources.project1.PhienBan;
+        }
+        #endregion
+
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
 		static void Main(string[] args) 
 		{
 			Form1 form=new Form1();
@@ -434,12 +438,5 @@ namespace MouseEventDemo
         }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
-
     }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Text = Resources.project1.TenPhanMem + " " + Resources.project1.PhienBan;
-        }
-     }
 }
