@@ -87,6 +87,14 @@ namespace MouseEventDemo
             this.pictureBoxChuotGiua = new System.Windows.Forms.PictureBox();
             this.pictureBoxForward = new System.Windows.Forms.PictureBox();
             this.pictureBoxBackward = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maiThịNgọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tuổiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dHBachKhoaHaNoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dHBachKhoaHaNoiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuottrai)).BeginInit();
@@ -192,6 +200,57 @@ namespace MouseEventDemo
             this.pictureBoxBackward.TabStop = false;
             this.pictureBoxBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnWheelForward_MouseUp);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutUsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(740, 24);
+            this.menuStrip1.TabIndex = 19;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutUsToolStripMenuItem
+            // 
+            this.aboutUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maiThịNgọcToolStripMenuItem,
+            this.tuổiToolStripMenuItem,
+            this.dHBachKhoaHaNoiToolStripMenuItem,
+            this.dHBachKhoaHaNoiToolStripMenuItem1});
+            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.aboutUsToolStripMenuItem.Text = "AboutUs";
+            // 
+            // maiThịNgọcToolStripMenuItem
+            // 
+            this.maiThịNgọcToolStripMenuItem.Name = "maiThịNgọcToolStripMenuItem";
+            this.maiThịNgọcToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.maiThịNgọcToolStripMenuItem.Text = "Mai Thi Ngoc";
+            // 
+            // tuổiToolStripMenuItem
+            // 
+            this.tuổiToolStripMenuItem.Name = "tuổiToolStripMenuItem";
+            this.tuổiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.tuổiToolStripMenuItem.Text = "21 tuoi";
+            // 
+            // dHBachKhoaHaNoiToolStripMenuItem
+            // 
+            this.dHBachKhoaHaNoiToolStripMenuItem.Name = "dHBachKhoaHaNoiToolStripMenuItem";
+            this.dHBachKhoaHaNoiToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.dHBachKhoaHaNoiToolStripMenuItem.Text = "CNTT1.02-K61";
+            // 
+            // dHBachKhoaHaNoiToolStripMenuItem1
+            // 
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Name = "dHBachKhoaHaNoiToolStripMenuItem1";
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
+            this.dHBachKhoaHaNoiToolStripMenuItem1.Text = "DH Bach Khoa Ha Noi";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+
+            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -205,6 +264,10 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxChuotGiua);
             this.Controls.Add(this.pictureBoxForward);
             this.Controls.Add(this.pictureBoxBackward);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -371,6 +434,8 @@ namespace MouseEventDemo
         }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
+
+    }
 
         private void Form1_Load(object sender, EventArgs e)
         {
