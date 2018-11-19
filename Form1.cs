@@ -9,7 +9,6 @@ using System.Drawing;
 using System.Resources;
 
 
-
 namespace MouseEventDemo
 {
     /// <summary>
@@ -104,24 +103,6 @@ namespace MouseEventDemo
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 14);
-            this.label1.TabIndex = 17;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 14);
-            this.label2.TabIndex = 18;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Enabled = false;
@@ -194,6 +175,24 @@ namespace MouseEventDemo
             this.pictureBoxBackward.TabStop = false;
             this.pictureBoxBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnWheelForward_MouseUp);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 14);
+            this.label1.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 14);
+            this.label2.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -209,7 +208,6 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxBackward);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -236,9 +234,8 @@ namespace MouseEventDemo
        
 		private void OnLeftMouseDown(object sender, MouseEventArgs e)
 		{
-            
-            pictureBoxChuottrai.Visible = true;
             pictureBox1.Visible = false;
+            pictureBoxChuottrai.Visible = true;
             pictureBoxChuotPhai.Visible = false;
             pictureBoxChuotGiua.Visible = false;
             pictureBoxBackward.Visible = false;
@@ -258,10 +255,9 @@ namespace MouseEventDemo
 
         private void OnRightMouseDown(object sender, MouseEventArgs e)
         {
-            pictureBoxChuotPhai.Visible = true;
             pictureBox1.Visible = false;
             pictureBoxChuottrai.Visible = false;
-            
+            pictureBoxChuotPhai.Visible = true;
             pictureBoxChuotGiua.Visible = false;
             pictureBoxBackward.Visible = false;
             pictureBoxForward.Visible = false;
@@ -375,9 +371,10 @@ namespace MouseEventDemo
         }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             Text = Resources.project1.TenPhanMem + " " + Resources.project1.PhienBan;
         }
-    }
+     }
 }

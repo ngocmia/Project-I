@@ -10,9 +10,3 @@ C:\Users\Ngoc Mai\Documents\MouseEventDemo\Clifton.Tools.Events\obj\Debug\Clifto
 C:\Users\Ngoc Mai\Documents\MouseEventDemo\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.csproj.CoreCompileInputs.cache
 C:\Users\Ngoc Mai\Documents\MouseEventDemo\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.dll
 C:\Users\Ngoc Mai\Documents\MouseEventDemo\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.pdb
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\bin\Debug\Clifton.Tools.Events.dll
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\bin\Debug\Clifton.Tools.Events.pdb
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.csprojAssemblyReference.cache
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.csproj.CoreCompileInputs.cache
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.dll
-C:\Users\Ngoc Mai\Documents\GitHub\Project-I\Clifton.Tools.Events\obj\Debug\Clifton.Tools.Events.pdb

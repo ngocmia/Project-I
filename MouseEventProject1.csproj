@@ -99,16 +99,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\project1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>project1.resx</DependentUpon>
-    </Compile>
     <Content Include="App.ico" />
-    <EmbeddedResource Include="Resources\project1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>project1.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <None Include="Resources\chuotphai.png" />
     <None Include="Resources\chuottrai.png" />
     <None Include="Resources\chuotgiua1.jpg" />
