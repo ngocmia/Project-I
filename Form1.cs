@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Web;
 using Clifton.Tools.Events;
@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 using log4net;
 using System.Drawing;
-
+using System.Resources;
 
 
 namespace MouseEventDemo
@@ -25,16 +25,15 @@ namespace MouseEventDemo
         private PictureBox pictureBoxBackward;
         private Label label2;
         private Label label1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem aboutUsToolStripMenuItem;
-        private ToolStripMenuItem maiThịNgọcToolStripMenuItem;
-        private ToolStripMenuItem tuổiToolStripMenuItem;
-        private ContextMenuStrip contextMenuStrip1;
-        private ToolStripMenuItem dHBachKhoaHaNoiToolStripMenuItem;
-        private ToolStripMenuItem dHBachKhoaHaNoiToolStripMenuItem1;
-        private System.ComponentModel.IContainer components;
 
-        public Form1()
+
+
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.Container components = null;
+
+		public Form1()
 		{
 			//A
 			// Required for Windows Form Designer support
@@ -79,7 +78,6 @@ namespace MouseEventDemo
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Timers.Timer();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,6 +94,7 @@ namespace MouseEventDemo
             this.dHBachKhoaHaNoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dHBachKhoaHaNoiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuottrai)).BeginInit();
@@ -103,7 +102,6 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -251,6 +249,7 @@ namespace MouseEventDemo
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+
             // 
             // Form1
             // 
@@ -267,8 +266,11 @@ namespace MouseEventDemo
             this.Controls.Add(this.pictureBoxBackward);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -277,8 +279,6 @@ namespace MouseEventDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChuotGiua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackward)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,5 +434,12 @@ namespace MouseEventDemo
         }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
+
     }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Text = Resources.project1.TenPhanMem + " " + Resources.project1.PhienBan;
+        }
+     }
 }
