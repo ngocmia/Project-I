@@ -1,0 +1,13 @@
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\bin\Debug\MouseEventDemo.exe.config
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\bin\Debug\MouseEventDemo.exe
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\bin\Debug\MouseEventDemo.pdb
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\bin\Debug\Clifton.Tools.Events.dll
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\bin\Debug\Clifton.Tools.Events.pdb
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csprojAssemblyReference.cache
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.Form1.resources
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.Properties.Resources.resources
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csproj.GenerateResource.cache
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csproj.CoreCompileInputs.cache
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventProject1.csproj.CopyComplete
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.exe
+C:\Users\Ngoc Mai\Documents\GitHub\Project-I\obj\Debug\MouseEventDemo.pdb

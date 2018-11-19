@@ -141,7 +141,6 @@ namespace MouseEventDemo
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBoxChuottrai
             // 
@@ -435,9 +434,5 @@ namespace MouseEventDemo
         }
         private static readonly ILog Log = LogManager.GetLogger(typeof(Form1));
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
